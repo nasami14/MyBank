@@ -2,8 +2,15 @@ package org.amir.minibank.dbmodels;
 
 import java.util.Date;
 
-public class Employee {
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+// ctrl+shift+o
+@Entity
+@Table(name="employee")
+public class Employee {
+	@Id
 	private long emp_id;
 	private String first_name;
 	private String last_name;
